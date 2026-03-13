@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="faceTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E84D00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="faceLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D2D2D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="faceRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3A3A3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#555555;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Isometric cube - top face -->
+  <polygon points="60,14 100,37 60,60 20,37" fill="url(#faceTop)" />
+
+  <!-- Left face -->
+  <polygon points="20,37 60,60 60,100 20,77" fill="url(#faceLeft)" />
+
+  <!-- Right face -->
+  <polygon points="60,60 100,37 100,77 60,100" fill="url(#faceRight)" />
+
+  <!-- Alert/risk triangle on top face -->
+  <polygon points="60,24 73,46 47,46" fill="white" opacity="0.95" />
+  <rect x="58.5" y="31" width="3" height="9" rx="1.5" fill="#E84D00" />
+  <circle cx="60" cy="43" r="1.8" fill="#E84D00" />
+
+  <!-- Edge highlights -->
+  <line x1="60" y1="14" x2="60" y2="60" stroke="white" stroke-width="0.8" opacity="0.4"/>
+  <line x1="20" y1="37" x2="60" y2="60" stroke="white" stroke-width="0.5" opacity="0.2"/>
+  <line x1="100" y1="37" x2="60" y2="60" stroke="white" stroke-width="0.5" opacity="0.2"/>
+</svg>
